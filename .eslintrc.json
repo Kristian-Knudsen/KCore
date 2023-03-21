@@ -1,0 +1,261 @@
+{
+  "extends": [
+    "plugin:vue/vue3-recommended"
+  ],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": "2020"
+  },
+  "rules": {
+    "array-bracket-spacing": [
+      "error"
+    ],
+    "arrow-spacing": [
+      "error"
+    ],
+    "brace-style": [
+      "error"
+    ],
+    "comma-spacing": [
+      "error"
+    ],
+    "comma-style": [
+      "error"
+    ],
+    "computed-property-spacing": [
+      "error"
+    ],
+    "curly": [
+      "error",
+      "multi-line"
+    ],
+    "eol-last": [
+      "error"
+    ],
+    "func-call-spacing": [
+      "error"
+    ],
+    "indent": [
+      "error",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "key-spacing": [
+      "error"
+    ],
+    "keyword-spacing": [
+      "error"
+    ],
+    "linebreak-style": [
+      "error"
+    ],
+    "max-statements-per-line": [
+      "error"
+    ],
+    "new-cap": [
+      "error",
+      {
+        "capIsNew": false
+      }
+    ],
+    "no-console": [
+      "warn"
+    ],
+    "no-multi-spaces": [
+      "error"
+    ],
+    "no-template-curly-in-string": [
+      "error"
+    ],
+    "no-trailing-spaces": [
+      "error"
+    ],
+    "no-useless-concat": [
+      "error"
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always",
+      {
+        "arraysInObjects": true,
+        "objectsInObjects": true
+      }
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "prefer-template": [
+      "error"
+    ],
+    "radix": [
+      "error"
+    ],
+    "semi": [
+      "error"
+    ],
+    "semi-spacing": [
+      "error"
+    ],
+    "space-before-blocks": [
+      "error"
+    ],
+    "space-before-function-paren": [
+      "error",
+      "never"
+    ],
+    "space-in-parens": [
+      "error"
+    ],
+    "space-infix-ops": [
+      "error"
+    ],
+    "space-unary-ops": [
+      "error"
+    ],
+    "template-curly-spacing": [
+      "error",
+      "never"
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 150,
+        "ignoreComments": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true
+      }
+    ],
+    "eqeqeq": [
+      "error",
+      "always"
+    ],
+    "vue/attributes-order": [
+      "error",
+      {
+        "order": [
+          "CONDITIONALS", // ex: 'v-if', 'v-else-if', 'v-else', 'v-show', 'v-cloak'
+          "RENDER_MODIFIERS", // ex: 'v-once', 'v-pre'
+          "DEFINITION", // ex: 'is'
+          "OTHER_DIRECTIVES", // ex: 'v-custom-directive'
+          "GLOBAL", // ex: 'id'
+          "TWO_WAY_BINDING", // ex: 'v-model'
+          "LIST_RENDERING", // ex: 'v-for item in items'
+          "UNIQUE", // ex: 'ref', 'key', 'slot'
+          "OTHER_ATTR", // ex: 'custom-prop="foo"', 'v-bind:prop="foo"', ':prop="foo"'
+          "CONTENT", // ex: 'v-text', 'v-html'
+          "EVENTS" // ex: '@click="functionCall"', 'v-on="event"'
+        ],
+        "alphabetical": false
+      }
+    ],
+    "vue/max-attributes-per-line": [
+      "error",
+      {
+        "singleline": {
+          "max": 3
+        },
+        "multiline": {
+          "max": 1
+        }
+      }
+    ],
+    "vue/first-attribute-linebreak": [
+      "error",
+      {
+        "singleline": "ignore",
+        "multiline": "below"
+      }
+    ],
+    "vue/multi-word-component-names": 0,
+    "vue/no-v-text-v-html-on-component": 0,
+    "vue/no-reserved-component-names": 0,
+    "vue/valid-next-tick": 0,
+    "vue/html-closing-bracket-newline": [
+      "error",
+      {
+        "singleline": "never",
+        "multiline": "always"
+      }
+    ],
+    "vue/order-in-components": [
+      "error",
+      {
+        "order": [
+          "el",
+          "name",
+          "components",
+          "directives",
+          "filters",
+          "mixins",
+          "props",
+          "data",
+          "computed",
+          "LIFECYCLE_HOOKS",
+          "watch",
+          "methods"
+        ]
+      }
+    ],
+    "vue/singleline-html-element-content-newline": [
+      "error",
+      {
+        "ignoreWhenNoAttributes": true,
+        "ignoreWhenEmpty": true
+      }
+    ],
+    "newline-before-return": "error",
+    "no-redeclare": "off",
+    "for-direction": "off",
+    "getter-return": "off",
+    "no-async-promise-executor": "off",
+    "no-misleading-character-class": "off",
+    "no-prototype-builtins": "off",
+    "no-shadow-restricted-names": "off",
+    "no-useless-catch": "off",
+    "no-with": "off",
+    "require-atomic-updates": "off",
+    "vue/html-indent": [
+      "error",
+      4
+    ],
+    "vue/html-self-closing": [
+      "error",
+      {
+        "html": {
+          "void": "never",
+          "normal": "never",
+          "component": "always"
+        }
+      }
+    ],
+    "no-nested-ternary": "error",
+    "vue/no-mutating-props": "off",
+    "vue/script-setup-uses-vars": "off",
+    "vue/v-bind-style": [
+      "error",
+      "shorthand"
+    ],
+    "vue/eqeqeq": [
+      "error",
+      "always"
+    ],
+    "vue/prefer-template": [
+      "error"
+    ],
+    "vue/object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "vue/template-curly-spacing": [
+      "error",
+      "never"
+    ],
+    "vue/this-in-template": [
+      "error",
+      "never"
+    ]
+  }
+}

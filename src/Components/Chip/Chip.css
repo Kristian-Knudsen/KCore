@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.transition, .k-chip {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.cursor-pointer, .k-chip {
+  cursor: pointer;
+}
+
+.font, .k-chip {
+  font-family: "Roboto", sans-serif;
+}
+
+.k-chip {
+  padding: 0.4rem 1.2rem;
+  width: min-content;
+  color: #ffffff;
+  border-radius: 0.75rem;
+  border-style: none;
+}
+
+.k-chip--primary {
+  background-color: #007bff;
+}
+.k-chip--primary:hover {
+  background-color: #006fe6;
+}
+
+.k-chip--warning {
+  background-color: #ffc107;
+}
+.k-chip--warning:hover {
+  background-color: #edb100;
+}
+
+.k-chip--info {
+  background-color: #17a2b8;
+}
+.k-chip--info:hover {
+  background-color: #148ea1;
+}
+
+.k-chip--error {
+  background-color: #dc3545;
+}
+.k-chip--error:hover {
+  background-color: #d32535;
+}
+
+.k-chip--black {
+  background-color: #343a40;
+}
+.k-chip--black:hover {
+  background-color: #292d32;
+}
+
+.k-chip--white {
+  background-color: #ffffff;
+  color: #343a40;
+  border: 1px solid #343a40;
+}
+.k-chip--white:hover {
+  background-color: #f2f2f2;
+}
+
+/*# sourceMappingURL=Chip.css.map */

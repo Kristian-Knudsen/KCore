@@ -1,0 +1,70 @@
+@use '../../Variables.scss' as *;
+
+.k-button {
+  @extend .transition;
+  @extend .cursor-pointer;
+  @extend .font;
+
+  // padding: y-axis x-axis
+  padding: 1rem 2rem;
+  color: $white;
+  border-radius: .75rem;
+  border-style: none;
+}
+
+.k-button--primary {
+  background-color: $primary;
+  &:hover {
+    background-color: darken($primary, 5);
+  }
+}
+
+.k-button--warning {
+  background-color: $warning;
+  &:hover {
+    background-color: darken($warning, 5);
+  }
+}
+
+.k-button--info {
+  background-color: $info;
+  &:hover {
+    background-color: darken($info, 5);
+  }
+}
+
+.k-button--error {
+  background-color: $error;
+  &:hover {
+    background-color: darken($error, 5);
+  }
+}
+
+.k-button--black {
+  background-color: $black;
+  &:hover {
+    background-color: darken($black, 5);
+  }
+}
+
+.k-button--white {
+  background-color: $white;
+  color: $black;
+  border: 1px solid $black;
+  &:hover {
+    background-color: darken($white, 5);
+  }
+}
+
+.k-button--small {
+  padding: .5rem 1rem;
+  font-size: .8rem;
+}
+.k-button--medium {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+.k-button--large {
+  padding: 1.5rem 3rem;
+  font-size: 2rem;
+}
