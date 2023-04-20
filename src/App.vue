@@ -2,5 +2,4 @@
 </script>
 
 <template>
-    <h1>KPKCORE</h1>
 </template>

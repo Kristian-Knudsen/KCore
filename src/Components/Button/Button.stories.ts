@@ -2,12 +2,12 @@ import Button from './Button.vue';
 import {Meta, StoryFn} from '@storybook/vue3';
 
 export default {
-    title: "Button",
+    title: "Molecules/Button",
     component: Button,
     argTypes: {
-        colorWay: { control: { type: 'select', options: ['primary', 'warning', 'info', 'error', 'black', 'white'] } },
-        size: { control: { type: 'select', options: ['small', 'medium', 'large']}},
+        colorWay: { control: { type: 'select' }, options: ['primary', 'warning', 'info', 'error', 'black', 'white'] },
         label: { control: { type: 'text' } },
+        block: { control: { type: 'select' }, options: [true, false]}
     }
 } as Meta<typeof Button>;
 
@@ -19,5 +19,15 @@ const Template: StoryFn<typeof Button> = (args) => ({
     template: '<Button v-bind="args" />'
 });
 
-export const Base = Template.bind({});
-Base.args = { label: 'Button', size: 'medium', colorWay: 'primary' };
+export const Primary = Template.bind({});
+Primary.args = { label: 'Primary button', colorWay: 'primary' };
+export const Warning = Template.bind({});
+Warning.args = { label: 'Warning button', colorWay: 'warning' };
+export const Info = Template.bind({});
+Info.args = { label: 'Info button', colorWay: 'info' };
+export const Error = Template.bind({});
+Error.args = { label: 'Error button', colorWay: 'error' };
+export const White = Template.bind({});
+White.args = { label: 'White button', colorWay: 'white' };
+export const Black = Template.bind({});
+Black.args = { label: 'Black button', colorWay: 'black' };

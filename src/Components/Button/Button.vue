@@ -1,16 +1,10 @@
 <script setup lang="ts">
-import './Button.scss';
-import { computed } from 'vue';
+import { findColorWay } from '../../Utils';
+
 const props = defineProps({
     label: {
         type: String,
         required: true
-    },
-    size: {
-        type: String,
-        required: false,
-        default: 'medium',
-        validator: (value) => ['small', 'medium', 'large'].includes(value),
     },
     onClick: {
         type: Function,
@@ -21,27 +15,21 @@ const props = defineProps({
         required: false,
         type: String,
         default: 'primary'
-    }
+    },
+    block: {
+        required: false,
+        type: Boolean,
+        default: false,
+    },
 });
-
-const classes = computed(() => ({
-    'k-button': true,
-    'k-button--small': props.size === 'small',
-    'k-button--medium': props.size === 'medium',
-    'k-button--large': props.size === 'large',
-    'k-button--primary': props.colorWay === 'primary',
-    'k-button--warning': props.colorWay === 'warning',
-    'k-button--info': props.colorWay === 'info',
-    'k-button--error': props.colorWay === 'error',
-    'k-button--black': props.colorWay === 'black',
-    'k-button--white': props.colorWay === 'white',
-}));
 
 </script>
 <template>
+    <!--  TODO: Add font -->
     <button
+        class="transition cursor-pointer py-2 px-6 rounded-full"
         type="button"
-        :class="classes"
+        :class="[findColorWay(props.colorWay), props.block === true ? 'w-full': null]"
         @click="onClick"
     >
         {{ props.label }}
